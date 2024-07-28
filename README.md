@@ -11,7 +11,7 @@ A React.js application for browsing and searching pet listings. Features include
 1. **Clone the Repository**
     
     ```bash
-    git clone <https://github.com/yourusername/pet-listing-website.git>
+    git clone <https://github.com/saikota7/pet-listing-website.git>
     cd pet-listing-website
     
     ```
