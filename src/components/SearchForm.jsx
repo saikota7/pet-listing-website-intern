@@ -31,7 +31,7 @@ const SearchForm = () => {
         type="text"
         value={location}
         onChange={(e) => setLocation(e.target.value)}
-        placeholder="Location"
+        placeholder="Location (e.g. city, state)"
       />
       <input
         type="text"
