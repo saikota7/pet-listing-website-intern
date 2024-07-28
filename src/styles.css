@@ -1,0 +1,164 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f6f7eb; 
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  min-height: 100vh; /* Full viewport height */
+}
+
+h1 {
+  text-align: center;
+  color: #e94f37;
+}
+
+/* Centering Form Container */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%; /* Ensure it takes up full height */
+  min-height: 100vh; /* Full viewport height */
+}
+
+/* Styling for the search form */
+.search-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 400px; /* Maximum width for the form */
+  background-color: #393e41;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Remove margin-left to ensure centering */
+  margin: 0 auto; /* Center horizontally within its container */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Form inputs and button styling */
+.search-form input,
+.search-form select {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+/* Styling for search button */
+.search-form button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #e62a0d; /* Primary button color */
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect for the search button */
+.search-form button:hover {
+  background-color: #e94f37; /* Change to a vibrant color */
+  transform: scale(1.05); /* Slightly increase the button size */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Responsive Design for the Form */
+
+/* For screens smaller than 600px */
+@media (max-width: 600px) {
+  .search-form {
+    width: 90%; /* Adjust width for smaller screens */
+    padding: 1rem;
+  }
+}
+
+/* For screens between 600px and 900px */
+@media (min-width: 600px) and (max-width: 900px) {
+  .search-form {
+    width: 80%; /* Adjust width for medium screens */
+  }
+}
+
+/* Centering Pet List */
+.pet-list-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+/* Styling for pet list */
+.pet-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center; /* Center items horizontally */
+  max-width: 1200px; /* Max width for better control */
+}
+
+/* Styling for each pet item */
+.pet-list-item {
+  background-color: #393e41;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  max-width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Image styling */
+.pet-list-item img {
+  width: 100%;
+  height: 200px; /* Adjust height if needed */
+  object-fit: cover;
+  border-bottom: 1px solid #e94f37;
+}
+
+/* Pet details section */
+.pet-list-item .details {
+  padding: 1rem;
+}
+
+.pet-list-item h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #e94f37;
+}
+
+.pet-list-item p {
+  margin: 0.5rem 0;
+  color: #f6f7eb;
+}
+
+/* Hover effect for pet items */
+.pet-list-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Error boundary styling */
+.error-boundary {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 1rem;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  margin: 1rem;
+}
+
+.error-boundary h2 {
+  margin: 0;
+}
+
+.error-boundary p {
+  margin: 0.5rem 0 0;
+}
